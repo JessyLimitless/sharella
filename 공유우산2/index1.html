@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Apple SD Gothic Neo', sans-serif;
+            background-color: #fffdfb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* 배경 패턴 */
+        .background-shapes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            background: radial-gradient(circle at 25% 30%, rgba(255, 210, 210, 0.2), rgba(255, 255, 255, 0)), 
+                        radial-gradient(circle at 80% 80%, rgba(255, 230, 230, 0.2), rgba(255, 255, 255, 0));
+        }
+
+        .login-container {
+            text-align: center;
+            max-width: 400px;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        /* 로고 스타일 */
+        .login-logo {
+            margin-bottom: 40px;
+        }
+
+        .login-logo img {
+            width: 60px;
+            height: auto;
+        }
+
+        /* 로그인 텍스트 */
+        .login-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+
+        /* 카카오톡 로그인 버튼 */
+        .login-button {
+            display: inline-block;
+            width: 100%;
+            background-color: #ffe812;
+            color: #3c1e1e;
+            padding: 15px 0;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            transition: background-color 0.2s ease;
+            margin-top: 20px;
+        }
+
+        .login-button:hover {
+            background-color: #ffdd00;
+        }
+
+        .login-button .icon {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: black;
+        }
+
+        .login-button-text {
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- 배경 패턴 추가 -->
+    <div class="background-shapes"></div>
+
+    <div class="login-container">
+        <!-- 로고 섹션 -->
+        <div class="login-logo">
+            <!-- 이미지 경로를 logo.jpg로 지정 -->
+            <img src="logofinalversion.png" alt="UPbrella 로고">
+        </div>
+
+        <!-- 타이틀 -->
+        <div class="login-title">로그인</div>
+
+        <!-- 카카오 로그인 버튼 -->
+        <a href="#" class="login-button">
+            <span class="icon">💬</span>
+            <span class="login-button-text">카카오로 3초 만에 시작하기</span>
+        </a>
+    </div>
+
+</body>
+</html>
